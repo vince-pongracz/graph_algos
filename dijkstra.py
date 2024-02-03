@@ -24,7 +24,6 @@ def initDijkstraArray(edges: list[Edge], startnode: int) -> list[DijkstraUtil]:
     
     startItemInit: DijkstraUtil = list(filter(lambda item: item.p == startnode, dijkstraArr))[0]
     startItemInit.d = 0
-    startItemInit.prevNode = startItemInit.p
     [print(x) for x in dijkstraArr]
     print('---')
     return dijkstraArr
